@@ -29,8 +29,9 @@ public class ReverseLevelOrderWithRecursion {
             System.out.print(node.data + " ");
             return;
         }
-        printReverseLevelOrder(node.left, level - 1);
         printReverseLevelOrder(node.right, level - 1);
+        printReverseLevelOrder(node.left, level - 1);
+
     }
     public static void main(String[] args) {
         Node root = new Node(1);
